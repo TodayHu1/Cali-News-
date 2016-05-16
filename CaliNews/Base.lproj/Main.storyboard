@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7nS-Vi-w9d">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--CALI首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CaliTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="CALI首页" id="wxC-g2-9NB">
+                        <barButtonItem key="leftBarButtonItem" id="vCv-IC-Zyh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iSN-zB-iXv">
+                                <rect key="frame" x="20" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="RENEW"/>
+                                <connections>
+                                    <action selector="RENEW:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kev-Fy-3Nv"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" id="gjF-Te-fCl">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yii-ft-tgv">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="menu"/>
+                                <connections>
+                                    <action selector="TopicMenuTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JYS-gG-eJK"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388.75" y="-29.577464788732392"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="WGn-bk-ylW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7nS-Vi-w9d" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="J99-wK-oiN"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="XD7-gu-sWf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.13333334029999999" green="0.58431375029999999" blue="0.77254909279999995" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.13333334029999999" green="0.58431375029999999" blue="0.77254909279999995" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.20784313730000001" green="0.42352941179999998" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5KJ-QY-2W0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJl-Se-ZAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1402.5" y="-28.999999999999996"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RENEW" width="20" height="20"/>
+        <image name="menu" width="20" height="20"/>
+    </resources>
+</document>

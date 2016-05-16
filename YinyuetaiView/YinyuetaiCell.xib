@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="微软雅黑.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+        <mutableArray key="微软雅黑细体.ttc">
+            <string>MicrosoftYaHeiUILight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="YinyuetaiCell" customModule="CaliNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="192"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="191.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rn8-Z9-8BL">
+                        <rect key="frame" x="5" y="3" width="377" height="185.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xk-Xl-WIy">
+                        <rect key="frame" x="341" y="133" width="35.5" height="21"/>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.37055954390000001" colorSpace="calibratedRGB"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAU-Wa-E7q">
+                        <rect key="frame" x="5" y="156" width="377" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.37055954391891899" colorSpace="calibratedRGB"/>
+                        <rect key="contentStretch" x="0.14999999999999999" y="0.14999999999999999" width="1" height="1"/>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHeiUILight" family="Microsoft YaHei UI" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zan" translatesAutoresizingMaskIntoConstraints="NO" id="WRk-he-qeY">
+                        <rect key="frame" x="320" y="134" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Ug3-C1-ciA"/>
+                            <constraint firstAttribute="width" constant="18" id="mBz-gW-z5F"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="xAU-Wa-E7q" secondAttribute="bottom" constant="5" id="1XW-aD-OoP"/>
+                    <constraint firstItem="rn8-Z9-8BL" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GT1-Vb-dtS"/>
+                    <constraint firstItem="7Xk-Xl-WIy" firstAttribute="leading" secondItem="WRk-he-qeY" secondAttribute="trailing" constant="2.5" id="JMZ-IK-YFL"/>
+                    <constraint firstItem="xAU-Wa-E7q" firstAttribute="centerX" secondItem="rn8-Z9-8BL" secondAttribute="centerX" id="OEA-Bo-SOQ"/>
+                    <constraint firstItem="rn8-Z9-8BL" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.97" constant="1" id="PnH-rb-TuM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="7Xk-Xl-WIy" secondAttribute="trailing" constant="3" id="RRz-6q-dZq"/>
+                    <constraint firstItem="rn8-Z9-8BL" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.97" id="bcv-8Q-vrF"/>
+                    <constraint firstItem="rn8-Z9-8BL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="caV-be-Q6L"/>
+                    <constraint firstItem="xAU-Wa-E7q" firstAttribute="top" secondItem="7Xk-Xl-WIy" secondAttribute="bottom" constant="1.5" id="gSZ-PX-yJC"/>
+                    <constraint firstItem="xAU-Wa-E7q" firstAttribute="width" secondItem="rn8-Z9-8BL" secondAttribute="width" id="mFX-8S-Irs"/>
+                    <constraint firstItem="xAU-Wa-E7q" firstAttribute="top" secondItem="WRk-he-qeY" secondAttribute="bottom" constant="4" id="mg8-hE-GMw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CellImage" destination="rn8-Z9-8BL" id="Epe-hF-OUt"/>
+                <outlet property="CellTitle" destination="xAU-Wa-E7q" id="3YJ-Vn-7kH"/>
+                <outlet property="CellZanLabel" destination="7Xk-Xl-WIy" id="14y-4k-T8K"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="248"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zan" width="47" height="47"/>
+    </resources>
+</document>

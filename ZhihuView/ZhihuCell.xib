@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="微软雅黑.ttf">
+            <string>MicrosoftYaHei</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="KGk-i7-Jjw" customClass="ZhihuCell" customModule="CaliNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="373" height="153.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IAb-Qn-HKs">
+                        <rect key="frame" x="290" y="16" width="74.5" height="123"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hy-Xd-tmH">
+                        <rect key="frame" x="13" y="15" width="272.5" height="20"/>
+                        <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="IAb-Qn-HKs" secondAttribute="trailing" id="0Zq-kt-YN2"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="top" secondItem="3hy-Xd-tmH" secondAttribute="bottom" constant="-26.5" id="32k-Bx-aGE"/>
+                    <constraint firstItem="3hy-Xd-tmH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="3ao-X5-MOw"/>
+                    <constraint firstItem="3hy-Xd-tmH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="5kl-ta-GKS"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="leading" secondItem="3hy-Xd-tmH" secondAttribute="trailing" constant="5" id="CGJ-nY-Y0e"/>
+                    <constraint firstItem="3hy-Xd-tmH" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.68" id="Lmd-qs-Egp"/>
+                    <constraint firstItem="3hy-Xd-tmH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="UtH-eN-fyU"/>
+                    <constraint firstAttribute="topMargin" secondItem="IAb-Qn-HKs" secondAttribute="top" id="X1A-pc-TCd"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dwv-eL-EoF"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="3hy-Xd-tmH" secondAttribute="leading" constant="15" id="eMz-eo-Jza"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="leading" secondItem="3hy-Xd-tmH" secondAttribute="trailing" constant="5" id="hdf-GB-EY7"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.8" id="pUq-UY-cwm"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="leading" secondItem="3hy-Xd-tmH" secondAttribute="trailing" constant="8" symbolic="YES" id="rfk-NB-N2S"/>
+                    <constraint firstItem="IAb-Qn-HKs" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.2" id="vcP-n7-5Cg"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Lmd-qs-Egp"/>
+                        <exclude reference="UtH-eN-fyU"/>
+                        <exclude reference="eMz-eo-Jza"/>
+                        <exclude reference="32k-Bx-aGE"/>
+                        <exclude reference="CGJ-nY-Y0e"/>
+                        <exclude reference="X1A-pc-TCd"/>
+                        <exclude reference="rfk-NB-N2S"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="CellImage" destination="IAb-Qn-HKs" id="mZA-Ua-BrD"/>
+                <outlet property="CellTitle" destination="3hy-Xd-tmH" id="GcP-7m-8Z2"/>
+            </connections>
+            <point key="canvasLocation" x="233.5" y="259"/>
+        </tableViewCell>
+    </objects>
+</document>

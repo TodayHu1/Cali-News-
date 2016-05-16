@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="280" id="KGk-i7-Jjw" customClass="POCOCell" customModule="CaliNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H4C-Al-3Da">
+                        <rect key="frame" x="7" y="3.5" width="338" height="158.5"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BlR-ye-G8r"/>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="NLP-Tu-bbt"/>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OME-CP-ggo"/>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.96" id="Vgh-15-JyD"/>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="olL-vP-K7b"/>
+                    <constraint firstItem="H4C-Al-3Da" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.96" id="xeU-2K-QuQ"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="NLP-Tu-bbt"/>
+                        <exclude reference="olL-vP-K7b"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="POCOImage" destination="H4C-Al-3Da" id="Cay-J7-S6o"/>
+            </connections>
+            <point key="canvasLocation" x="230" y="229"/>
+        </tableViewCell>
+    </objects>
+</document>

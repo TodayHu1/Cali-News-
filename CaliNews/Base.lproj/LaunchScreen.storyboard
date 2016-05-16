@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="背景" translatesAutoresizingMaskIntoConstraints="NO" id="YFl-uy-MhA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="calinews" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-vA-MFl">
+                                <rect key="frame" x="0.0" y="-47" width="287" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="VjM-3e-nce"/>
+                                    <constraint firstAttribute="width" constant="122" id="Yk2-Y1-icF"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VjM-3e-nce"/>
+                                        <exclude reference="Yk2-Y1-icF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="VjM-3e-nce"/>
+                                        <include reference="Yk2-Y1-icF"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cali" translatesAutoresizingMaskIntoConstraints="NO" id="bvR-mY-hrI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="VyA-Jm-03L"/>
+                                    <constraint firstAttribute="height" constant="128" id="rA3-Co-dP4"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VyA-Jm-03L"/>
+                                        <exclude reference="rA3-Co-dP4"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="VyA-Jm-03L"/>
+                                        <include reference="rA3-Co-dP4"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put your news in one place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiX-09-vgM">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialHebrew" family="Arial Hebrew" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.17099767734594595" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20784313725490194" green="0.42352941176470588" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="e6z-vA-MFl" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="8" id="87m-GP-7Bn">
+                                <variation key="widthClass=compact" constant="12"/>
+                            </constraint>
+                            <constraint firstItem="FiX-09-vgM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="CJD-XM-ruB"/>
+                            <constraint firstItem="YFl-uy-MhA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="G71-my-qoa"/>
+                            <constraint firstItem="YFl-uy-MhA" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="IjB-XM-MBc"/>
+                            <constraint firstItem="YFl-uy-MhA" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="Jp5-d1-pZI"/>
+                            <constraint firstItem="YFl-uy-MhA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NVv-cC-Fdl"/>
+                            <constraint firstItem="e6z-vA-MFl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ac5-pH-XdE"/>
+                            <constraint firstItem="bvR-mY-hrI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fmZ-lf-72T"/>
+                            <constraint firstItem="bvR-mY-hrI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.8" id="oBX-Sn-bZ1"/>
+                            <constraint firstItem="FiX-09-vgM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="sdK-fz-xDM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="YFl-uy-MhA"/>
+                                <exclude reference="e6z-vA-MFl"/>
+                                <exclude reference="bvR-mY-hrI"/>
+                                <exclude reference="FiX-09-vgM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="87m-GP-7Bn"/>
+                                <exclude reference="ac5-pH-XdE"/>
+                                <exclude reference="CJD-XM-ruB"/>
+                                <exclude reference="sdK-fz-xDM"/>
+                                <exclude reference="G71-my-qoa"/>
+                                <exclude reference="IjB-XM-MBc"/>
+                                <exclude reference="Jp5-d1-pZI"/>
+                                <exclude reference="NVv-cC-Fdl"/>
+                                <exclude reference="fmZ-lf-72T"/>
+                                <exclude reference="oBX-Sn-bZ1"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="YFl-uy-MhA"/>
+                                <include reference="e6z-vA-MFl"/>
+                                <include reference="bvR-mY-hrI"/>
+                                <include reference="FiX-09-vgM"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="87m-GP-7Bn"/>
+                                <include reference="ac5-pH-XdE"/>
+                                <include reference="CJD-XM-ruB"/>
+                                <include reference="sdK-fz-xDM"/>
+                                <include reference="G71-my-qoa"/>
+                                <include reference="IjB-XM-MBc"/>
+                                <include reference="Jp5-d1-pZI"/>
+                                <include reference="NVv-cC-Fdl"/>
+                                <include reference="fmZ-lf-72T"/>
+                                <include reference="oBX-Sn-bZ1"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.5" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cali" width="300" height="200"/>
+        <image name="calinews" width="287" height="47"/>
+        <image name="背景" width="235" height="415"/>
+    </resources>
+</document>

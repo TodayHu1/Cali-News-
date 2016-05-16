@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="微软雅黑细体.ttc">
+            <string>MicrosoftYaHeiUILight</string>
+            <string>MicrosoftYaHeiUILight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuidingView" customModule="CaliNews" customModuleProvider="target">
+            <connections>
+                <outlet property="Btn0" destination="eIa-ZP-adj" id="g9e-GZ-5JH"/>
+                <outlet property="Btn0Label" destination="l38-9b-FJe" id="O2C-EM-l4U"/>
+                <outlet property="Btn1" destination="9dE-ES-dqs" id="HNt-V2-4ec"/>
+                <outlet property="Btn2" destination="jHh-7c-Gho" id="az1-Q5-E54"/>
+                <outlet property="ImageView" destination="r6d-nN-wkd" id="JbL-iv-NH2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainguide" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-nN-wkd">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <gestureRecognizers/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-ES-dqs">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="Y4b-mU-dHX"/>
+                        <constraint firstAttribute="height" constant="10" id="hAU-TC-Jvc"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Y4b-mU-dHX"/>
+                            <exclude reference="hAU-TC-Jvc"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Y4b-mU-dHX"/>
+                            <include reference="hAU-TC-Jvc"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="Btn1Tapped:" destination="-1" eventType="touchUpInside" id="lNd-aw-uQz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHh-7c-Gho">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="0.20439189190000001" colorSpace="calibratedRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="QX8-Jl-4bC"/>
+                        <constraint firstAttribute="width" constant="10" id="n1V-EN-DKj"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QX8-Jl-4bC"/>
+                            <exclude reference="n1V-EN-DKj"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="QX8-Jl-4bC"/>
+                            <include reference="n1V-EN-DKj"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="Btn2Tapped:" destination="-1" eventType="touchUpInside" id="GBA-00-tdT"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下一条" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l38-9b-FJe">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" name="MicrosoftYaHeiUILight" family="Microsoft YaHei UI" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIa-ZP-adj">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.19884923986486486" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VjO-fg-UtG"/>
+                        <constraint firstAttribute="width" constant="73" id="flf-5z-YVZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MicrosoftYaHeiUILight" family="Microsoft YaHei UI" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="VjO-fg-UtG"/>
+                            <exclude reference="flf-5z-YVZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="VjO-fg-UtG"/>
+                            <include reference="flf-5z-YVZ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="Btn0Tapped:" destination="-1" eventType="touchUpInside" id="vAK-18-eHw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="9dE-ES-dqs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-13" id="1dl-dd-bEm"/>
+                <constraint firstItem="eIa-ZP-adj" firstAttribute="leading" secondItem="jHh-7c-Gho" secondAttribute="trailing" constant="41" id="351-i2-Uqk"/>
+                <constraint firstItem="r6d-nN-wkd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3Ao-hm-QSu"/>
+                <constraint firstItem="jHh-7c-Gho" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="13" id="3GU-87-0UG"/>
+                <constraint firstItem="9dE-ES-dqs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="179" id="9BS-TN-Bqe"/>
+                <constraint firstItem="jHh-7c-Gho" firstAttribute="top" secondItem="eIa-ZP-adj" secondAttribute="bottom" constant="-25" id="9sC-3i-c2l"/>
+                <constraint firstItem="9dE-ES-dqs" firstAttribute="top" secondItem="jHh-7c-Gho" secondAttribute="top" id="Hhc-tX-lgd"/>
+                <constraint firstItem="l38-9b-FJe" firstAttribute="centerY" secondItem="eIa-ZP-adj" secondAttribute="centerY" id="Jub-LN-6wz"/>
+                <constraint firstItem="l38-9b-FJe" firstAttribute="height" secondItem="eIa-ZP-adj" secondAttribute="height" id="Ruo-Yu-KAl"/>
+                <constraint firstItem="r6d-nN-wkd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="STC-Us-yQJ"/>
+                <constraint firstAttribute="bottom" secondItem="jHh-7c-Gho" secondAttribute="bottom" constant="37" id="YjH-2G-7Ci"/>
+                <constraint firstItem="9dE-ES-dqs" firstAttribute="firstBaseline" secondItem="jHh-7c-Gho" secondAttribute="firstBaseline" id="ZBk-RE-Oa4"/>
+                <constraint firstItem="jHh-7c-Gho" firstAttribute="leading" secondItem="9dE-ES-dqs" secondAttribute="trailing" constant="18" id="b6Q-ln-oDC"/>
+                <constraint firstItem="l38-9b-FJe" firstAttribute="width" secondItem="eIa-ZP-adj" secondAttribute="width" id="guk-cm-1B9"/>
+                <constraint firstItem="9dE-ES-dqs" firstAttribute="baseline" secondItem="jHh-7c-Gho" secondAttribute="baseline" id="jfi-0Q-P3d"/>
+                <constraint firstItem="l38-9b-FJe" firstAttribute="centerX" secondItem="eIa-ZP-adj" secondAttribute="centerX" id="js6-1Y-BHi"/>
+                <constraint firstAttribute="bottom" secondItem="9dE-ES-dqs" secondAttribute="bottom" constant="37" id="mr3-BL-QBZ"/>
+                <constraint firstItem="r6d-nN-wkd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="nCz-5R-cbw"/>
+                <constraint firstItem="r6d-nN-wkd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="poK-cu-3dw"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="r6d-nN-wkd"/>
+                    <exclude reference="9dE-ES-dqs"/>
+                    <exclude reference="jHh-7c-Gho"/>
+                    <exclude reference="l38-9b-FJe"/>
+                    <exclude reference="eIa-ZP-adj"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="1dl-dd-bEm"/>
+                    <exclude reference="9BS-TN-Bqe"/>
+                    <exclude reference="Hhc-tX-lgd"/>
+                    <exclude reference="ZBk-RE-Oa4"/>
+                    <exclude reference="jfi-0Q-P3d"/>
+                    <exclude reference="mr3-BL-QBZ"/>
+                    <exclude reference="351-i2-Uqk"/>
+                    <exclude reference="3GU-87-0UG"/>
+                    <exclude reference="9sC-3i-c2l"/>
+                    <exclude reference="YjH-2G-7Ci"/>
+                    <exclude reference="b6Q-ln-oDC"/>
+                    <exclude reference="Jub-LN-6wz"/>
+                    <exclude reference="Ruo-Yu-KAl"/>
+                    <exclude reference="guk-cm-1B9"/>
+                    <exclude reference="js6-1Y-BHi"/>
+                    <exclude reference="3Ao-hm-QSu"/>
+                    <exclude reference="STC-Us-yQJ"/>
+                    <exclude reference="nCz-5R-cbw"/>
+                    <exclude reference="poK-cu-3dw"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="r6d-nN-wkd"/>
+                    <include reference="9dE-ES-dqs"/>
+                    <include reference="jHh-7c-Gho"/>
+                    <include reference="l38-9b-FJe"/>
+                    <include reference="eIa-ZP-adj"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="1dl-dd-bEm"/>
+                    <exclude reference="9BS-TN-Bqe"/>
+                    <exclude reference="Hhc-tX-lgd"/>
+                    <exclude reference="ZBk-RE-Oa4"/>
+                    <exclude reference="jfi-0Q-P3d"/>
+                    <include reference="mr3-BL-QBZ"/>
+                    <include reference="351-i2-Uqk"/>
+                    <include reference="3GU-87-0UG"/>
+                    <include reference="9sC-3i-c2l"/>
+                    <include reference="YjH-2G-7Ci"/>
+                    <exclude reference="b6Q-ln-oDC"/>
+                    <include reference="Jub-LN-6wz"/>
+                    <include reference="Ruo-Yu-KAl"/>
+                    <include reference="guk-cm-1B9"/>
+                    <include reference="js6-1Y-BHi"/>
+                    <include reference="3Ao-hm-QSu"/>
+                    <include reference="STC-Us-yQJ"/>
+                    <include reference="nCz-5R-cbw"/>
+                    <include reference="poK-cu-3dw"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="mainguide" width="375" height="667"/>
+    </resources>
+</document>
