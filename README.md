@@ -35,5 +35,5 @@
     
     微博分享（系统绑定的账号）：
     
-     ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/share.png)
+     ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/share.jpg)
     
