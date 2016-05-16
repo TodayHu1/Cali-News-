@@ -11,8 +11,7 @@
  
  详细内容：
  
-![详细](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/detail1.png)
-![详细](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/detail2.png)
+![详细](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/detail.png)
  
  主题分页管理:
  
