@@ -3,6 +3,7 @@
 (感谢程序中引用的一些给了我参考程序的大神们，包括导航栏扩展，GIF支持，集成下拉和上拉刷新加载等)
 
 主界面：
+
 ![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/main.png)
  
  详细内容：
