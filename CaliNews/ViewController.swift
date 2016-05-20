@@ -60,7 +60,7 @@ class ViewController: UIViewController,TopicViewDelegate {//添加两个协议
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-            v14.title = "军事"
+            v14.title = "军事"        //我们的网站已经关闭了，你可以自己建立一个json的网页来展示信息
             v14.URLPath = "http://1.calitencent.applinzi.com/"
             v13.title = "汽车"
             v13.URLPath = "http://1.tencentmobile.applinzi.com/"
