@@ -9,30 +9,12 @@
 
 (感谢程序中引用的一些给了我参考程序的大神们，包括导航栏扩展，GIF支持，集成下拉和上拉刷新加载等)
 
-主界面：
+预览：
 
-![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/main.png)
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
  
- 详细内容：
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
  
-![详细](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/detail.png)
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
  
- 主题分页管理:
  
-![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/topic1.png)
-![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/topic2.png)
-
-初次启动的引导界面：
-
- ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/guide1.png)
- ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/guide2.png)
- 
- 加载界面：
- 
-  ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/loading.png)
-  
-  下拉刷新&上拉加载：
-  
-   ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/pull1.png)
-    ![](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/pull2.png)
-    
