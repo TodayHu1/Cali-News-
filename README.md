@@ -11,10 +11,10 @@
 
 预览：
 
-![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.jpg)
  
-![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan2.jpg)
  
-![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan1.png)
+![主界面](https://github.com/Orancz/Cali-News-/raw/master/APP图片预览/yulan3.jpg)
  
  
